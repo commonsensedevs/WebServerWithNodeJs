@@ -3,10 +3,22 @@ const productRouter = express.Router();
 
 // Mock data
 const products = [
-    { id: 1, name: 'Product 1', description: 'This is product 1' },
-    { id: 2, name: 'Product 2', description: 'This is product 2' },
-    // Add more products as needed
-];
+    {
+      ProductName: 'Product 1',
+      ProductCode: 'P1',
+      ProductPrice: 100
+    },
+    {
+      ProductName: 'Product 2',
+      ProductCode: 'P2',
+      ProductPrice: 200
+    },
+    {
+      ProductName: 'Product 3',
+      ProductCode: 'P3',
+      ProductPrice: 300
+    }
+  ];
 
 productRouter.get('/', (req, res) => {
     res.json(products);
